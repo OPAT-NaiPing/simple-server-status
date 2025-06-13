@@ -8,3 +8,8 @@ dist
 sss-agent.yaml
 sss-dashboard.yaml
 logs
+/dashboard/dashboard
+/dashboard/main
+/agent/main
+/agent/sssa
+/agent/agent

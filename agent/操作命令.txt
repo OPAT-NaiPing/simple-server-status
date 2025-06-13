@@ -1,0 +1,18 @@
+cd /root/soft/agent
+mkdir /etc/sssa/
+cp sssa /etc/sssa/sssa
+chmod +x /etc/sssa/sssa
+cp sss-agent.yaml /etc/sssa/sss-agent.yaml
+cp sssa.service /etc/systemd/system/
+systemctl daemon-reload
+systemctl enable sssa
+systemctl start sssa
+
+#查看状态
+systemctl status sssa
+
+#错误
+journalctl -u sssa -xe
+
+cd /etc/sssa/
+
